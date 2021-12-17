@@ -1,0 +1,17 @@
+---
+ - hosts: localhost
+   become: yes
+   tasks:
+     - name: create launch config
+       community.aws.ec2_lc:
+         name: my_new_lc
+         image_id: ami-0ed9277fb7eb570c9
+         key_name: awxdemokey
+         region: us-east-1
+         security_groups: sg-23423
+         instance_type: t2.micro
+         assign_public_ip: yes
+       environment:
+         AWS_DEFAULT_REGION: "us-east-1"
+         AWS_SECRET_ACCESS_KEY: "sPxYEhxsL+chCSO0ZImrhsDXX0qgpORusgH8fUpI"
+         AWS_ACCESS_KEY_ID: "AKIAQBQQVNZZ7ZK4N2XP"
