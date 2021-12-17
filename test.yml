@@ -18,11 +18,11 @@
          
      - community.aws.ec2_asg:
          name: myasg
-         launch_config_name: test
+         launch_config_name: my_new_lc
          health_check_period: 60
          health_check_type: ELB
          replace_all_instances: no    
-         replace_batch_size: 1
+         #replace_batch_size: 1
          # We will wait untill all newly replaced instances are healthy and in service
          # Max wait time will be 10 minutes after which ansible will time out
          # In case of timeout the activity will keep happening on AWS
