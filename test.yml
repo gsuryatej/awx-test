@@ -23,8 +23,8 @@
          health_check_type: ELB
          replace_all_instances: yes
          min_size: 1
-         max_size: 1
-         desired_capacity: 2
+         max_size: 2
+         desired_capacity: 1
          region: us-east-1
        environment:
          AWS_DEFAULT_REGION: "us-east-1"
