@@ -29,9 +29,9 @@
          # Just that the terminal will not wait for the output and exit with code 0
          wait_for_instances: true
          wait_timeout: 600
-         min_size: 1
-         max_size: 2
-         desired_capacity: 1
+         min_size: 2
+         max_size: 4
+         desired_capacity: 2
          region: us-east-1
        environment:
          AWS_DEFAULT_REGION: "us-east-1"
