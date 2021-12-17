@@ -8,7 +8,7 @@
          image_id: ami-0ed9277fb7eb570c9
          key_name: awxdemokey
          region: us-east-1
-         security_groups: sg-23423
+         security_groups: sg-025453978b26fdae3
          instance_type: t2.micro
          assign_public_ip: yes
        environment:
