@@ -15,3 +15,18 @@
          AWS_DEFAULT_REGION: "us-east-1"
          AWS_SECRET_ACCESS_KEY: "sPxYEhxsL+chCSO0ZImrhsDXX0qgpORusgH8fUpI"
          AWS_ACCESS_KEY_ID: "AKIAQBQQVNZZ7ZK4N2XP"
+         
+     - community.aws.ec2_asg:
+         name: myasg
+         launch_config_name: my_new_lc
+         health_check_period: 60
+         health_check_type: ELB
+         replace_all_instances: yes
+         min_size: 1
+         max_size: 1
+         desired_capacity: 2
+         region: us-east-1
+       environment:
+         AWS_DEFAULT_REGION: "us-east-1"
+         AWS_SECRET_ACCESS_KEY: "sPxYEhxsL+chCSO0ZImrhsDXX0qgpORusgH8fUpI"
+         AWS_ACCESS_KEY_ID: "AKIAQBQQVNZZ7ZK4N2XP"
