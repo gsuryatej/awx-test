@@ -21,7 +21,7 @@
          launch_config_name: test
          health_check_period: 60
          health_check_type: ELB
-         replace_all_instances: yes     
+         replace_all_instances: no    
          replace_batch_size: 1
          # We will wait untill all newly replaced instances are healthy and in service
          # Max wait time will be 10 minutes after which ansible will time out
