@@ -29,9 +29,9 @@
          # Just that the terminal will not wait for the output and exit with code 0
          wait_for_instances: true
          wait_timeout: 600
-         min_size: "{{ min_size | deafult(1)}}"
-         max_size: "{{ max_size | deafult(1) }}"
-         desired_capacity: "{{ desired_size | deafult(2) }}"
+         min_size: "{{ min_size | default(1)}}"
+         max_size: "{{ max_size | default(1) }}"
+         desired_capacity: "{{ desired_size | default(2) }}"
          region: us-east-1
        environment:
          AWS_DEFAULT_REGION: "us-east-1"
